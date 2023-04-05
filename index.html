@@ -1,0 +1,505 @@
+
+<style>
+
+    /* главный блок */
+    .main {
+        height: 60px;
+        background: black;
+        width: 1920px; 
+        height: 3000px; 
+        background: #1f1f1f; 
+        margin-left: auto; 
+        margin-right: auto; 
+        font-family: Arial;
+    }
+
+    /* навигация */
+    .navigation {
+        width: 1920px; 
+        height: 100px; 
+        margin-left: auto; 
+        margin-right: auto;
+        display: flex;
+    }
+
+    .logo_container {
+        width: 300px; 
+        height: 100px; 
+        margin-right: 310px;
+    }
+
+    .logo {
+        margin-top: 32px; 
+        margin-left: 90px;
+    }
+
+    .link_container {
+        width: 700px; 
+        height: 66px; 
+        padding-top: 34px; 
+        margin-right: 260px; 
+        text-align: center; 
+    }
+
+    .actions_container {
+        width: 350px; 
+        height: 100px; 
+        display: flex;
+    }
+
+    .install_tv_container {
+        width: 280px; 
+        height: 66px; 
+        padding-top: 34px; 
+        margin-right: 20px;
+    }
+
+    .profile_container {
+        width: 50px; 
+        height: 50px; 
+        margin-top: 25px;
+    }
+
+    .profile {
+        width: 50px;
+    }
+
+    /* баннер */
+    .banner {
+        width: 1920px; 
+        height: 550px; 
+        margin-left: auto; 
+        margin-right: auto;  
+        background: url('bg.png');
+    }
+
+    .banner_text_container {
+        width: 1000px; 
+        height: 150px; 
+        padding-top: 150px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        text-align: center;
+    }
+
+    .banner_header {
+        margin: 0; 
+        color: #F7F7F7; 
+        font-size: 48px;
+    }
+
+    .banner_text {
+        font-size: 24px; 
+        color: #fff;
+    }
+
+    /* скелет блока фильмов */
+
+    .skeleton {
+        width: 1600px; 
+        height: 1625px; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+    .links {
+
+        color: white;
+        font-size: 24px; 
+        margin-right: 0px;
+        text-decoration: none;
+    }
+
+    .header {
+
+        color:#CD5700; 
+        font-size: 30px;
+        margin-left: 10px;
+    }
+   
+    .movie_block{
+
+        width: 345px;
+        height: 310px; 
+        margin-right: 0px;
+    }
+
+    .text_yellow {
+
+        color: #008D00;
+        margin-left:255px;
+        font-weight: 700;
+    }
+
+    .button {
+
+        padding-top: 10px; 
+        padding-bottom: 10px;
+        padding-left: 60px;
+        padding-right: 60px;
+        background: #3080DE;
+        border: none; 
+        font-size: 12px;
+        width: 270px;
+        margin-left: 150px;
+    }
+
+    .movie_img {
+
+        width: 270px; 
+        height: 270px;
+        margin-left: 150px;
+    }
+
+    .case {
+
+        height: 50px;
+        background: transparent;
+    }
+
+    .header2 {
+
+        color:#CD5700; 
+        font-size: 30px;
+        margin-left: 150px;
+
+    }
+   
+
+    .box1
+    { 
+        background-color: transparent;
+        height: 350px;
+        display: flex;
+    }
+
+
+    .case1
+    {
+        background-color: black;
+        height: 270px;
+        width: 480px;
+        margin-left: 200px;
+        margin-top: 20px;
+        border-radius: 15px;
+        display: flex;
+        color: white;
+    }
+
+    .case1:hover {
+
+        background:#446392;
+        background: linear-gradient(180deg, black,#446392 ); opacity: .7; height: 270px; width:480px;
+    }
+
+    .case2
+    {
+        background-color: black;
+        height: 270px;
+        width: 480px;
+        margin-left: 50px;
+        margin-top: 20px;
+        border-radius: 15px;
+        display: flex;
+        color: white;
+    }
+
+    .case2:hover {
+
+        background: #136b3a;
+        background: linear-gradient(180deg, black, #136b3a); opacity: .9; height: 270px; width:480px;
+    }
+
+    .case3
+    {
+        background-color: black;
+        height: 270px;
+        width: 480px;
+        margin-left: 50px;
+        margin-top: 20px;
+        border-radius: 15px;
+        display: flex;
+        color: white;
+    }
+
+    .case3:hover {
+
+        background: #ac1128;
+        background: linear-gradient(180deg, black, #ac1128); opacity: .7; height: 270px; width:480px;
+    }
+
+    .block1 {
+
+        background: transparent;
+        width: 240px;
+        margin-left: 10px;
+
+    }
+
+    .block2 {
+
+        background: transparent;
+        width: 240px;
+        margin-left: 10px;
+
+    }
+
+    .img_film_1 {
+
+        height: 135px;
+        widows: 135px;
+        margin-top: 75px;
+        border-radius: 15px;
+        margin-left: 45px;
+    }
+
+    .img_film_2 {
+
+        height: 135px;
+        widows: 135px;
+        margin-top: 75px;
+        border-radius: 15px;
+        margin-left: 45px;
+    }
+
+    .img_film_3 {
+
+        height: 135px;
+        widows: 135px;
+        margin-top: 75px;
+        border-radius: 15px;
+        margin-left: 45px;
+    }
+
+    .texth3_1 {
+
+        margin-top: 50px;
+        font-size: 28px;
+        margin-left: 33px;
+    }
+
+    .text_p1 {
+
+        color: black;
+        margin-top: -15px;
+        font-size: 25px;
+        margin-left: 33px;
+        font-weight: bold;
+    }
+
+    .texth3_2 {
+
+        margin-top: 50px;
+        font-size: 28px;
+        margin-left: 33px;
+    }
+
+     .text_p2 {
+
+        color: black;
+        margin-top: -15px;
+        font-size: 25px;
+        margin-left: 33px;
+        font-weight: bold;
+    }
+
+    .texth3_3 {
+
+        margin-top: 50px;
+        font-size: 28px;
+        margin-left: 33px;
+    }
+
+    .text_p3 {
+
+        color: black;
+        margin-top: -15px;
+        font-size: 22px;
+        margin-left: 33px;
+        font-weight: bold;
+    }
+
+</style>
+ 
+<!-- 1 уровень -->   
+<div class="main">
+	<!-- 2 уровень -->
+	<!-- ШАПКА -->
+    <div class="navigation">
+        <div class="logo_container">
+            <img src="logo.svg" class="logo"/>
+        </div>
+        <div class="link_container">
+            <a href="#" class="links">Мое кино</a>
+            <a href="#" class="links">Магазин</a>
+            <a href="#" class="links">Буду смотреть</a>
+            <a href="#" class="links">Покупки</a>
+        </div>
+        <div class="actions_container">
+            <div class="install_tv_container">
+                <a href="#" class="links">
+                    Установить на ТВ    
+                </a>
+            </div>
+            <div class="profile_container">
+                <img src="profile.png" class="profile"/>
+            </div>
+        </div>
+    </div>
+    <!-- БАННЕР -->
+    <div class="banner">
+        <div class="banner_text_container">
+            <h1 class="banner_header">Миллиарды</h1>
+            <p class="banner_text">Миллиардер против прокурора — большие люди, большие деньги, большие проблемы. Для фанатов «Карточного домика»</p>
+        </div>
+    </div>
+    <div class="skeleton">
+        <h2 class="header">Новинки</h2>
+        <!-- див строка -->
+        <div style="width: 1600px; height: 310px; margin-bottom: 40px;  display: flex;">
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film1.png" class="movie_img">
+                <button class="button">Смотреть</button>   
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film2.png" class="movie_img">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film3.png" class="movie_img">
+                <button class="button">Смотреть</button>    
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film4.png" class="movie_img">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+        </div>
+        <h2 class="header">Популярные</h2>
+		<!-- див строка -->
+        <div style="width: 1600px; height: 310px; margin-bottom: 40px; ; display: flex;">
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film1.png" class="movie_img">
+                <button class="button">Смотреть</button>   
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film2.png" class="movie_img">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film3.png" class="movie_img">
+                <button class="button">Смотреть</button>    
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film4.png" class="movie_img">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+        </div>
+        <h2 class="header">Выбираем сегодня</h2>
+		<!-- див строка -->
+        <div style="width: 1600px; height: 310px; margin-bottom: 40px; ; display: flex;">
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film1.png" class="movie_img">
+                <button class="button">Смотреть</button>   
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film2.png" class="movie_img">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film3.png" class="movie_img">
+                <button class="button">Смотреть</button>    
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film4.png" class="movie_img">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+        </div>
+        <h2 class="header">В тренде: приключения</h2>
+		<!-- див строка -->
+        <div style="width: 1600px; height: 310px; margin-bottom: 40px; ; display: flex;">
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film1.png" class="movie_img">
+                <button class="button">Смотреть</button>   
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film2.png" class="movie_img">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film3.png" class="movie_img">
+                <button class="button">Смотреть</button>    
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div class="movie_block">
+                <img src="film4.png" class="movie_img">
+                <button class="button">Смотреть</button>  
+                <div class="text_yellow">от 599 ₽</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="case">
+        <h3 class="header2">Скоро на KinoPoisk</h3>
+    </div>
+
+    <div class="box1">
+
+        <div class="case1">
+            <div class="block1">
+                <h3 class="texth3_1">25 октября на КиноПоиске</h3>
+                <p class="text_p1">Продолжение увлекательной истории народа На'ви</p>
+            </div>
+            <div class="block2">
+                <img src="avatar.jpg" class="img_film_1">
+            </div>
+        </div>
+        <div class="case2">
+             <div class="block1">
+                <h3 class="texth3_2">25 октября на КиноПоиске</h3>
+                <p class="text_p2">Фильм продолжает историю избранного Нео</p>
+            </div>
+            <div class="block2">
+                <img src="matrix.jpg" class="img_film_2">
+            </div>
+        </div>
+        <div class="case3">
+             <div class="block1">
+                <h3 class="texth3_3">25 октября на КиноПоиске</h3>
+                <p class="text_p3">Продолжение истории о Питере Паркере и его подружке ЭмДжей</p>
+            </div>
+            <div class="block2">
+                <img src="spider.jpg" class="img_film_3">
+            </div>
+        </div>
+    </div>
+</div>
